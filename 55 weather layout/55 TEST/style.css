@@ -1,0 +1,189 @@
+
+body{
+    background-color: white;
+    margin: 10vh 35vw 10vh 35vw;
+    font-family: 'Roboto', sans-serif;
+}
+.mainBlock{
+    
+    border: 1px;
+    border-style: solid;
+    width: 30vw;
+    height: 50vh;
+}
+.searchBlock{
+    border: 1px solid black;
+    width: 29.9vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form{
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+.inp{
+    width: 100%;
+    border: none;
+    padding: 0 0 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.formBtn{
+    margin: 7px 10px 0 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+
+}
+
+.frmBtn img{
+    display: flex;
+    padding: auto;
+}
+
+/* INFO BLOCK START */
+.infoBlock{
+    border: 1px solid black;
+    float: left;
+    width: 14.87vw;
+    height: 44.6vh;
+    display: flex;
+    flex-direction: column;
+}
+.tablink {
+    background-color:white;
+    color: black;
+    float: left;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 10px;
+    font-size: 17px;
+    width: 33.3334%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+.tabBtn{
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-around;
+    height: 10%;
+    
+}
+
+.tabContent {
+    color:black;
+    display: none;
+    text-align: center;
+    width: 14.87vw;
+    height: 90%;
+    overflow-y: auto;
+}
+/* NOW */
+.nowTemp{
+    font-size: 64px;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+
+}
+
+img#wthrImg{
+    margin: 0;
+}
+
+.nowFav{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    
+}
+.nowFav p{
+    margin: 2% 5%;
+    font-size: 24px;
+}
+img#likeBtn{
+    margin: 2%;
+}
+/* NOW END */
+/* DETAILS */
+.detCity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 0 50px 10px;
+    font-size: 24px;
+}
+
+.detBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.detBlock p{
+   margin: 10px;
+   font-size: 24px;
+}
+/* DETAILS END */
+/* FORECAST */
+.foreCity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 0 11px 10px;
+    font-size: 24px;
+}
+.foreBlock{
+    height: 120px;
+    width: 240px;
+    border: 1px solid black;
+    margin: 10px 20px ;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    justify-items: flex-start;
+    padding: 10px 0 0 5px; 
+    
+}
+
+.foreBlock img{
+    padding: 0 0 0 10px;
+}
+/* FORECAST END */
+/* INFO BLOCK END */
+.favBlock{
+    border: 1px solid black;
+    float: right;
+    width: 14.9vw;
+    height: 44.6vh;
+}
+
+.favLocTit{
+    padding: 20px 0 13px 10px;
+    font-size: 32px;
+}
+.line{
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+.favLoc{
+    display: flex;
+    flex-direction: column;
+}
+
+.favLoc p{
+    padding-left: 20px;
+    font-size: 24px;
+    margin: 8px;
+}

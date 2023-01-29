@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" href="/57 weather request/style.css">
+</head>
+<body>
+  <div class="mainBlock">
+    <div class="searchBlock">
+      <form action="submit" class="form">
+        <input type="text" class="inp" placeholder="Enter the name of the city to find out the weather">
+        <button class="formBtn"><img src="/57 weather request/images/loopa.png" alt="" width="32px" height="32px"></button>
+      </form>
+      
+    </div>
+    <div class="contentBlock">
+      <div class="infoBlock">
+      <div id="Now" class="tabContent">
+        <p class="nowTemp">14&deg</p>
+        <img class="nowImg" src="/57 weather request/images/cloudy.png" alt="" width="210px" height="180px" id="wthrImg">
+        <div class="nowFav">
+          <p class="cityName">Aktobe</p>
+          <img src="/57 weather request/images/hearts/hrtPas.png" alt="" width="24px" height="24px" id="likeBtn">
+        </div>
+      </div>
+      <div id="Details" class="tabContent">
+        <div class="detCity">
+          Aktobe
+        </div>
+        <div class="detBlock">
+          <p>Temperature:14&deg;</p>
+          <p>Feels like: 10&deg;</p>
+          <p>Weather: Clouds</p>
+          <p>Sunrise: 03:21</p>
+          <p>Sunset: 18:54</p>
+        </div>
+      </div>
+      <div id="Forecast" class="tabContent">
+        <div class="foreCity">
+          Aktobe
+        </div>
+        <div class="foreBlock">
+          <div> 17 May </div>
+          <div> 12:00 </div>
+          
+          <div>Temperature: 13&deg; </div>
+          <div>Rain</div>
+          <div>Feels like: 10&deg;</div> 
+          <div><img src="/57 weather request/images/rain.png" alt="" width="30px" height="30px"></div>
+        </div>
+        <div class="foreBlock">
+          <div> 17 May </div>
+          <div> 15:00 </div>
+          
+          <div>Temperature: 13&deg; </div>
+          <div>Rain</div>
+          <div>Feels like: 10&deg;</div> 
+          <div><img src="/57 weather request/images/rain.png" alt="" width="30px" height="30px"></div>
+        </div>
+        <div class="foreBlock">
+          <div> 17 May </div>
+          <div> 18:00 </div>
+          
+          <div>Temperature: 13&deg; </div>
+          <div>Cloudy</div>
+          <div>Feels like: 10&deg;</div> 
+          <div><img src="/57 weather request/images/cloudy.png" alt="" width="30px" height="30px"></div>
+        </div>
+        <div class="foreBlock">
+          <div> 17 May </div>
+          <div> 21:00 </div>
+          
+          <div>Temperature: 13&deg; </div>
+          <div>Cloudy</div>
+          <div>Feels like: 10&deg;</div> 
+          <div><img src="/57 weather request/images/cloudy.png" alt="" width="30px" height="30px"></div>
+        </div>
+      </div>
+      <div class="tabBtn">
+        <button class="tablink" onclick="openTab('Now', this)" id="defaultOpen">Now</button>
+        <button class="tablink" onclick="openTab('Details',this)" >Details</button>
+        <button class="tablink" onclick="openTab('Forecast',this)" >Forecast</button>
+      </div>
+    </div>
+    <div class="favBlock">
+      <div class="favLocTit">Added Locations</div>
+      <div class="line"></div>
+      <div class="favLoc">
+        <p>Amur</p>
+        <p>Samara</p>
+        <p>Bali</p>
+        <p>Dane</p>
+        <p>Kilo</p>
+        <p>Nur-Sultan</p>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+
+  <div class="city__name"></div> 
+  <div class="now__temp"></div> 
+  
+  <script src="/57 weather request/main.js"></script>
+</body>
+</html>

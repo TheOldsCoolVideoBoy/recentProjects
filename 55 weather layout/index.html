@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/55 weather layout/style.css">
+</head>
+<body>
+  <div id="Now" class="tabContent">
+    <p>температура</p>
+    <p>значок погоды</p>
+    <p>добавить город в избранное</p>
+  </div>
+  <div id="Details" class="tabContent">
+    <p>город</p>
+    <p>температура</p>
+    <p>температура по ощущениям</p>
+  </div>
+  <div id="Forecast" class="tabContent">
+    <p>город</p>
+    <p>температура в 12 дня</p>
+    <p>температура в 3 дня</p>
+  </div>
+  <button class="tablink" onclick="openTab('Now', this)" id="defaultOpen">Now</button>
+  <button class="tablink" onclick="openTab('Details',this)">Details</button>
+  <button class="tablink" onclick="openTab('Forecast',this)">Forecast</button>
+  <script src="/55 weather layout/main.js"></script>
+</body>
+</html>

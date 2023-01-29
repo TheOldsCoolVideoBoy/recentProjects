@@ -1,0 +1,135 @@
+body{
+    background-color: rgb(133, 190, 162);
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 26px;
+}
+.outerBlock{
+    background-color: mintcream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+    padding: 3vh;
+}
+
+.header{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 21px;
+}
+
+.innerHighBlockInput,.innerLowBlockInput{
+    display: flex;
+    justify-content: space-between;
+    border: 0.5vh;
+    border-color: rgb(187, 187, 187);
+    border-style: solid;
+    border-radius: 1vh;
+    min-width: 25vw;
+    padding: 0.5vw;
+    margin: 1vh 0 1vh 0;
+}
+.inputHigh, .inputLow, .formHigh, .formLow{
+    display: flex;
+    justify-content: left;
+    padding: auto;
+    /* border: 0.5vh;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 1vh; */
+    border: none;
+    width: 90%;
+    padding: 0.8vh;
+    background-color: mintcream;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 21px;
+    outline: none;
+}
+
+.plusBtn{
+    display: flex;
+    justify-content: center;/* √ */
+    border: none;
+    width: 10%;
+    padding: 0.8vh;
+    background-color: mintcream;
+    font-size: 28px;
+    color: gray;
+}
+.plusBtn:hover{
+    display: flex;
+    justify-content: center;/* √ */
+    border: none;
+    width: 10%;
+    padding: 0.8vh;
+    background-color: mintcream;
+    color: black;
+}
+.plusBtn:active{
+    color: #3EB489;
+}
+/*  */
+.innerBlockTask{
+    display: flex;
+    justify-content: space-between;
+    border: 0.5vh;
+    border-color: rgb(187, 187, 187);
+    border-style: solid;
+    border-radius: 1vh;
+    width: 25vw;
+    padding: 0.5vw;
+    margin: 1vh 0 1vh 0;
+}
+.checkBox{
+    display: flex;
+    justify-content: center;/* √ */
+    padding: auto;
+    border: 0.5vh;
+    width: 1.5vw;
+    height: 5vh;
+    padding: 0.8vh;
+}
+
+.paragraph{
+    display: flex;
+    justify-content: center;/* √ */
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    padding: 0.8vh;
+    margin: 0;
+}
+
+.crossBtn{
+    display: flex;
+    justify-content: center;/* √ */
+    border: none;
+    width: 10%;
+    max-height: 8vh;
+    padding: 0.8vh;
+    background-color: mintcream;
+    font-size: 20px;
+    color: gray;
+}
+
+.crossBtn:hover{
+    display: flex;
+    justify-content: center;/* √ */
+    padding: auto;
+    border: none;
+    width: 10%;
+    padding: 0.8vh;
+    background-color: mintcream;
+    color: black;
+}
+.crossBtn:active{
+    color: #3EB489;
+}

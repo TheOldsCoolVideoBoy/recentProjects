@@ -1,0 +1,222 @@
+html{
+    height: 100%;
+    overflow-y: auto;
+}
+body{
+    background-color: white;
+    margin: 5% 30%;
+    font-family: 'Roboto', sans-serif;
+    height: 50vh;
+}
+.mainBlock{
+    border: 1px;
+    border-style: solid;
+    width: 100%;
+    height: 100%;
+}
+.searchBlock{
+    border: 1px solid black;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form{
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+.inp{
+    width: 100%;
+    border: none;
+    padding: 0 0 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.inp::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.formBtn{
+    margin: 7px 10px 0 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+
+}
+
+.frmBtn img{
+    display: flex;
+    padding: auto;
+}
+.contentBlock{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+/* INFO BLOCK START */
+.infoBlock{
+    border: 1px solid black;
+    float: left;
+    width: 49.98%;
+    height: 44.6vh;
+    display: flex;
+    flex-direction: column;
+}
+.tablink {
+    background-color:white;
+    color: black;
+    float: left;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 10px;
+    font-size: 17px;
+    width: 33.3334%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+.tabBtn{
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-around;
+    height: 10%;
+    
+}
+
+.tabContent {
+    color:black;
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+}
+/* NOW */
+.nowTemp{
+    font-size: 60px;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+
+}
+
+img#wthrImg{
+    margin: 0;
+}
+
+.nowFav{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    
+}
+.cityName{
+    margin: 2% 5%;
+    font-size: 24px;
+}
+img#likeBtn{
+    margin: 2%;
+}
+
+.heart{
+    width:24px;
+    height:24px;
+}
+/* NOW END */
+/* DETAILS */
+.detCity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 0 50px 10px;
+    font-size: 24px;
+}
+
+.detBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.detBlock p{
+   margin: 10px;
+   font-size: 24px;
+   text-align: left;
+}
+/* DETAILS END */
+/* FORECAST */
+.foreCity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 0 11px 10px;
+    font-size: 24px;
+}
+.foreBlock{
+    height: 120px;
+    width: 320px;
+    border: 1px solid black;
+    margin: 10px 20px ;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: flex-start;
+    padding: 10px 0 0 5px; 
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+    
+}
+
+.foreBlock img{
+    padding: 0 0 0 10px;
+    height: 70px;
+    width: 70px;
+}
+/* FORECAST END */
+/* INFO BLOCK END */
+.favBlock{
+    border: 1px solid black;
+    float: right;
+    width: 49.3%;
+    height: 44.6vh;
+}
+
+.favLocTit{
+    padding: 20px 0 13px 10px;
+    font-size: 32px;
+}
+.line{
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+.favLoc{
+    display: flex;
+    flex-direction: column;
+}
+
+.favLoc div{
+    padding-left: 20px;
+    font-size: 24px;
+    margin: 8px;
+}
+
+
+
+.city__name{
+    margin: auto;
+}
+.now__temp{
+    pad: -moz-element();
+}

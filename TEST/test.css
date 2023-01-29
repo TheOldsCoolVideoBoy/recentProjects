@@ -1,0 +1,12 @@
+.btn{
+    display: flex;
+    justify-content: center;/* √ */
+    padding: auto;
+    border: 0.5vh;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 1vh;
+    width: 10%;
+    padding: 0.8vh;
+    background-color: white;
+}

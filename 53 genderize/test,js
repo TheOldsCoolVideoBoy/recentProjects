@@ -1,0 +1,48 @@
+const serverUrl = "https://api.genderize.io";
+// константа нашего сервера на которпый нужно отправить запрос
+
+function getName() {//функция которая получает имя
+    //берёт его из формы
+  const firstName = document.querySelector(".name_holder").value;
+  if (firstName) {
+    //если форма не пуста вызывает функцию доступа к ЮРЛ
+    getUrl(firstName);
+  } else alert("Name is empty");
+}
+
+//получаем ЮРЛ... по имени? может мы получаем ответ от сервера, а не имя?
+function getUrl(name) {
+    //наша форма отправки имени на сервер "имя сервера + полученое имя"
+  const url = `${serverUrl}?name=${name}`;
+  //вызываем фетч
+  const response = fetch(url);
+  //????
+  response
+    //если получили то отправляем ответ в жсон???
+    //нахуя зачем?
+    .then((resp) => resp.json())
+    //значение ответа от сервера.значение пола в константе мы передаём в 
+    //функцию узнать пол
+    .then((value) => {
+      const gender = value.gender;
+      showGender(gender, name);
+    });
+}
+//в функцию передаём пол и имя
+function showGender(gender, name) {
+    //передаём в жс блок резулятата
+  let result = document.querySelector(".result_label");
+  //и в результате даём ему текстовое значение "имя" "пол"
+  result.textContent = `${name} is ${gender}`;
+}
+//даём кнопоцке активцика
+let button = document.querySelector(".submit_button");
+//добавляем слежку
+button.addEventListener("click", function (event) {
+    //отменяем отпарвку формы
+  event.preventDefault();
+  //вызываем имя
+  getName();
+});
+
+// и какого хуя код написан спиралью?
